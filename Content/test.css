@@ -1,0 +1,11 @@
+﻿div ul ul {
+    display: none
+}
+
+div ul li:hover > ul {
+    display: block
+}
+
+div div div .header-image {
+    width: 20px
+}

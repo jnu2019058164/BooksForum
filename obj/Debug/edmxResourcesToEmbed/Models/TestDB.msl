@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="asp_testModelStoreContainer" CdmEntityContainer="asp_testEntities">
+    <EntitySetMapping Name="TestDB">
+      <EntityTypeMapping TypeName="asp_testModel.TestDB">
+        <MappingFragment StoreEntitySet="TestDB">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

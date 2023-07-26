@@ -1,0 +1,10 @@
+﻿@model IEnumerable<asp_test.Models.Tutorials>
+
+<div class="TList">
+    @foreach (var item in Model)
+    {
+        <div class="TBox" style="margin-top:10px;margin-bottom:5px">
+            <a href="@item.Link"> <h2>@item.About</h2> </a>
+        </div>
+    }
+</div>

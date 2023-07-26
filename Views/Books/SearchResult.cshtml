@@ -1,0 +1,22 @@
+﻿@model IEnumerable<asp_test.Models.Books>
+
+@{
+    ViewBag.Title = "SearchResult";
+}
+
+
+<div class="SearchBox" style="height: 1000px">
+    <h1>Result:@ViewData["Result"]</h1>
+    
+    @foreach (var item in Model)
+    {
+        <div class="SearchResultUnit" style="width: 160px;float:left">
+            <a href="/Home/Books_download?BookId=@item.BookId" style="" title="book" target="_blank">
+                <img src="~/statics/Cover/@item.Cover" style="width:90%;text-align:center" />
+                <h4 style=" text-align: center;"> @item.BookName </h4>
+                <h6 style=" text-align: center;"> @item.Author </h6>
+            </a>
+                       
+        </div>
+    }
+</div>

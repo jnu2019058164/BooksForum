@@ -1,0 +1,11 @@
+﻿@model IEnumerable<asp_test.Models.Texts>
+
+
+<div class="TextList">
+    @foreach (var item in Model)
+    {
+        <div class="TextBox" style="margin-top:10px;margin-bottom:5px">
+           <a href="/Texts/TextPage?TextId=@item.Id"> <h2>@item.Title</h2> </a>
+        </div>
+    }
+</div>

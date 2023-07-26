@@ -1,0 +1,67 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/**** g-wrap-5 ****/
+.g-wrap-5 {
+    margin-bottom: 18px;
+}
+    .g-wrap-5 .m-list {
+        /* height: 2150px; */
+        overflow: hidden;
+    }
+
+    .g-wrap-5 .m-sxxs {
+        border-bottom: 3px solid #65bcd9;
+    }
+
+m-box {
+    position: relative;
+    width: 340px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px #d3d2d2;
+    -moz-box-shadow: 0 1px 3px #d3d2d2;
+    -webkit-box-shadow: 0 1px 3px #d3d2d2;
+    float: left
+}
+
+.m-list {
+    /* height: 2150px; */
+    overflow: hidden;
+}
+
+.m-first {
+    position: relative;
+    padding-top: 32px;
+}
+
+.m-first .m-item {
+    padding-top: 4px;
+}
+
+
+
+/*
+}*/

@@ -1,0 +1,12 @@
+﻿
+
+
+
+<h1 style="text-align:center">@ViewData["Title"]</h1>
+<h4 style="text-align:center">@ViewData["Editor"]</h4>
+<div class="TextBody">
+    @ViewData["Content"]
+</div>
+<h6 style="text-align:left">@Html.ActionLink("编辑文章","Edit/"+ViewData["id"],"Texts")</h6>
+<h6 style="text-align:right">@ViewData["Date"]</h6>
+

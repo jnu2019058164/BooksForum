@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Books_download";
+}
+
+<style>
+    .bookDetailsBox div.bookProperty {
+        float: left;
+        width: 50%;
+        font-size: 10pt;
+    }
+
+    .bookDetailsBox div.bookProperty .property_label {
+        float: left;
+        color: #888;
+        font-size: 10pt;
+        display: block;
+    }
+
+    .bookDetailsBox div.bookProperty .property_value {
+        display: block;
+        margin-left: 100px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        margin-top: 25px;
+    }
+</style>
+
+<div class="Books_box" style="width:100%;height:400px">
+    <div class="book_img" style="width:30%;float:left">
+        <img src=@ViewData["Cover"] style="width: 80%; margin-left: 30px;" />
+    </div>
+
+    <div class="Books_info" style="width:70%;float:right">
+        <h1 itemprop="name" style="color: #000; line-height: 140%;">
+            @ViewData["BookName"]
+        </h1>
+        <i>@ViewData["Author"]</i>
+
+
+        <div style="overflow: hidden; zoom: 1; margin-top: 30px;">
+            <div class="bookDetailsBox">
+                <div class="bookProperty property_categories">
+                    <div class="property_label"> Categories: </div>
+                    <div class="property_value " style=" display: block; margin-left: 100px;"> @ViewData["Categories"] </div>
+                </div>
+                <div class="bookProperty property_year">
+                    <div class="property_label">Year:</div>
+                    <div class="property_value "> <span id="books_year"> @ViewData["Year"]  </span> </div>
+                </div>
+                <div class="bookProperty property_edition">
+                    <div class="property_label">Edition:</div>
+                    <div class="property_value ">@ViewData["Edition"]</div>
+                </div>
+                <div class="bookProperty property_publisher">
+                    <div class="property_label">Publisher:</div>
+                    <div class="property_value ">@ViewData["Publisher"]</div>
+                </div>
+                <div class="bookProperty property_language">
+                    <div class="property_label">Language:</div>
+                    <div class="property_value text-capitalize">@ViewData["Language"]</div>
+                </div>
+                <div class="bookProperty property_pages">
+                    <div class="property_label">Pages:</div>
+                    <div class="property_value "><span title="Pages paperback">@ViewData["Pages"]</span></div>
+                </div>
+                <div class="bookProperty property_isbn 10">
+                    <div class="property_label">ISBN 10:</div>
+                    <div class="property_value ">@ViewData["ISBN10"]</div>
+                </div>
+                <div class="bookProperty property_isbn 13">
+                    <div class="property_label">ISBN 13:</div>
+                    <div class="property_value ">@ViewData["ISBN13"]</div>
+                </div>
+                <div class="bookProperty property_File">
+                    <a class="btn btn-primary dlButton addDownloadedBook" href=@ViewData["File"] target="" data-book_id="3362174" data-isbn="1472947371" rel="nofollow">
+                        <i class="zlibicon-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+<br />
